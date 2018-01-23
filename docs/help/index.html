@@ -391,7 +391,7 @@
           "QUIT",
           "",
           "© Save Projects changes to XYZ.dwg?",
-          "<a href='https://luong.huu.vn/projects' target='_self'> YES </a> | <a href='about:blank' target='_self'> NO </a>",
+          "<a href='https://anq.name.vn' target='_self'> YES </a> | <a href=''> NO </a>",
           ""
         ];
 
@@ -400,17 +400,17 @@
 
       //LOGIN
       "login": function() {
-        window.location.replace("https://luong.huu.vn/...");
+        window.location.replace("https://www.anq.name.vn/...");
       },
       
       //ABOUT
       "about": function() {
         var print = [
-          "About XYZ:",
+          "About US:",
           "",
           "Hi!",
           "I'm © | ™",
-          " is a team based in HCMC | <a href='https://luong.huu.vn/about' target='_blank'> <sup>see more...</sup> </a>",
+          " is a team based in HCMC | <a href='https://www.anq.name.vn/about' target='_blank'> <sup>see more...</sup> </a>",
           ""
         ];
         output(print);
@@ -446,7 +446,7 @@
           "[CP Bau Xeo] [Dong Nai]",
           "[Khuon Chinh Xac Minh Dat - MIDA] [Long An]",
           "",
-          "I do a lot of work in [<sup><a href='https://luong.huu.vn/auto' target='_blank'> <strong>C</strong>ONSTRUCTION-<strong>A</strong>UDIT-<strong>D</strong>ESIGN </a></sup>], to find out more use '<sup><strike>login</strike></sup>'.",
+          "I do a lot of work in [<sup><a href='https://www.anq.name.vn/father' target='_blank'> <strong>C</strong>ONSTRUCTION-<strong>A</strong>UDIT-<strong>D</strong>ESIGN </a></sup>], to find out more use '<sup><strike>login</strike></sup>'.",
           "",
         ];
         $.each(print, function(index, value) {
@@ -477,9 +477,9 @@
         var print = [
           "",
           "I do a lot of web design, some for clients, some purely because I'm bored.",
-          "My client work can be seen on the <a href='https://omegadesign.com.vn/' target='_blank'><sup>Omega Design</sup></a>, and the more random stuff is on my <a href='https://bêta.vn/' target='_blank'><sup>BETA</sup></a>",
+          "My client work can be seen on the <a href='https://omegadesign.com.vn/' target='_blank'><sup>Omega Design</sup></a>, and the more random stuff is on my <a href='https://anq.name.vn/friend' target='_blank'><sup>FRIEND</sup></a>",
           "",
-          "To find out more about © | ™, click <a href='https//blóg.vn/' target='_blank'><sup>blog</sup></a>.",
+          "To find out more about © | ™, click <a href='https://anq.name.vn/blog' target='_blank'><sup>blog</sup></a>.",
           ""
         ];
 
@@ -489,10 +489,10 @@
       "contact": function() {
 
         var print = [
-          "Contact XYZ:",
+          "Contact US:",
           "",
-          "Email: <span>luong@huu.vn</span>",
-          "Socials: <span>@3TFake</span>",
+          "Email: <span>i@anq.name.vn</span>",
+          "Socials: <span>@AQViet</span>",
           ""
         ];
 
@@ -502,7 +502,7 @@
       "help": function(a) {
         if(a){
           var print = ["Help(s) for Command <span>" + a.toUpperCase() + "<sub> © </sub></span>", ""];
-          var helplink = "™ | Help for this command <a target='_blank' href='https://luong.huu.vn/search?q=" + a.toLowerCase() +"'> <sup>" + a.toUpperCase() + "</sup></a>";
+          var helplink = "™ | Help for this command <a target='_blank' href='https://www.anq.name.vn/search?q=" + a.toLowerCase() +"'> <sup>" + a.toUpperCase() + "</sup></a>";
           
           $.ajax({
             url: 'help/'+ a.toLowerCase(),
