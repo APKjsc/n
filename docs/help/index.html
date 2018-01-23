@@ -505,7 +505,7 @@
           var helplink = "™ | Help for this command <a target='_blank' href='https://www.anq.name.vn/search?q=" + a.toLowerCase() +"'> <sup>" + a.toUpperCase() + "</sup></a>";
           
           $.ajax({
-            url: 'help/'+ a.toLowerCase(),
+            url: ''+ a.toLowerCase(),
             type: 'GET',
             success: function(data) { 
               print.push(data.replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/(?:\r\n|\r|\n)/g, '<br />').replace(/\t/g, '&nbsp;&nbsp;'));
