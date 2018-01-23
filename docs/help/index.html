@@ -502,21 +502,18 @@
       "help": function(a) {
         if(a){
           var print = ["Help(s) for Command <span>" + a.toUpperCase() + "<sub> © </sub></span>", ""];
-          var helplink = "™ | Help for this command <a target='_blank' href='https://www.anq.name.vn/search?q=" + a.toLowerCase() +"'> <sup>" + a.toUpperCase() + "</sup></a>";
+          var helplink = "™ | Online help for this command You can find here<a target='_blank' href='https://www.anq.name.vn/search?q=" + a.toLowerCase() +"'> <sup>" + a.toUpperCase() + "</sup></a>";
           
           $.ajax({
             url: ''+ a.toLowerCase(),
             type: 'GET',
             success: function(data) { 
               print.push(data.replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/(?:\r\n|\r|\n)/g, '<br />').replace(/\t/g, '&nbsp;&nbsp;'));
-              
-              print.push(helplink,"");
-              
-              
               output(print);
             },
             error: function(data, status, error)  {
-              print.push("SORY | © can't find Help(s) for this Command !","");
+              print.push("SORY | © can't find this offline !","");
+              print.push(helplink,"");
               output(print);
             }
           });
