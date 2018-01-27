@@ -311,7 +311,7 @@
                                     <textarea maxlength="7500" minlength="20" id="inputMessage" placeholder="Enter your message here" name="inputMessage" required="true"></textarea>
                                 </div>
                                 <div class="fields clearfix">
-                                    <div class="input">
+                                    <!--div class="input">
                                         <label for="recaptcha_response_field"><sup>Captcha</sup></label>
                                         <input type="text" id="recaptcha_response_field" name="recaptcha_response_field" class="input-block-level" placeholder="Enter CAPTCHA" required="true"/>
                                     </div>
@@ -322,13 +322,9 @@
                                         <span class="recaptcha_only_if_image"><a href="javascript:Recaptcha.switch_type('audio')"><i class="icon-volume-up"></i></a></span>
                                         <span class="recaptcha_only_if_audio"><a href="javascript:Recaptcha.switch_type('image')"><i class="icon-eye-open"></i></a></span>
                                         <span><a href="javascript:Recaptcha.showhelp()"><i class="icon-question-sign"></i></a></span>
-                                    </div>
-                                    <script type="text/javascript" src="https://www.google.com/recaptcha/api/challenge?k=6LeXaCUUAAAAAJNgvF26MPk_3HHiVIhfUcS5m4E9"></script>
-                                    <noscript>
-                                        <iframe src="https://www.google.com/recaptcha/api/noscript?k=6LeXaCUUAAAAAJNgvF26MPk_3HHiVIhfUcS5m4E9" height="300" width="500" frameborder="0"></iframe><br/>
-                                        <textarea name="recaptcha_challenge_field" rows="3" cols="40"></textarea>
-                                        <input type="hidden" name="recaptcha_response_field" value="manual_challenge"/>
-                                    </noscript>
+                                    </div!-->
+                                    <div class="g-recaptcha" data-sitekey="6LeXaCUUAAAAAJNgvF26MPk_3HHiVIhfUcS5m4E9"></div>
+                                    <script type="text/javascript" src="https://www.google.com/recaptcha/api.js"></script>
                                 </div>
                                 <div id="resultMessage" style="display: none;"></div>
                             </form>
